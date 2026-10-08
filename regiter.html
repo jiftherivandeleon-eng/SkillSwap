@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillSwap | Create Account</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page register-page">
+  <div class="register-orb" aria-hidden="true"></div>
+
+  <main class="auth-card register-card">
+    <a class="logo" href="login.html">Skill<span>Swap</span></a>
+    <p class="tagline">Join a campus community built on mutual help.</p>
+
+    <form action="login.html" method="get">
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="full-name">Full name</label>
+          <input id="full-name" name="full-name" type="text" required>
+        </div>
+
+        <div class="form-group">
+          <label for="school-email">School email</label>
+          <input id="school-email" name="school-email" type="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="major">Course / Major</label>
+          <input id="major" name="major" type="text" required>
+        </div>
+
+        <div class="form-group">
+          <label for="year-level">Year level</label>
+          <select id="year-level" name="year-level" required>
+            <option value="" selected disabled>Select year</option>
+            <option>First year</option>
+            <option>Second year</option>
+            <option>Third year</option>
+            <option>Fourth year</option>
+            <option>Graduate student</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="offer-skills">Skills I can offer</label>
+        <input id="offer-skills" name="offer-skills" type="text"
+               placeholder="Example: Canva design, calculus tutoring" required>
+      </div>
+
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="register-password">Password</label>
+          <input id="register-password" name="password" type="password" minlength="6" required>
+        </div>
+
+        <div class="form-group">
+          <label for="confirm-password">Confirm password</label>
+          <input id="confirm-password" name="confirm-password" type="password" minlength="6" required>
+        </div>
+      </div>
+
+      <button type="submit">Create Account</button>
+    </form>
+
+    <p class="auth-link">
+      Already have an account? <a href="login.html">Back to login</a>
+    </p>
+  </main>
+</body>
+</html>
